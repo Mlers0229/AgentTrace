@@ -48,3 +48,29 @@ Additional engineering documents:
 - [docs/DATABASE.md](./docs/DATABASE.md): database model and table responsibilities.
 - [docs/API.md](./docs/API.md): API groups and authentication model.
 - [docs/DEV_PLAN.md](./docs/DEV_PLAN.md): staged implementation plan.
+
+## Local Backend Startup
+
+Start PostgreSQL and Redis:
+
+```powershell
+docker compose up -d postgres redis
+```
+
+Compile the backend:
+
+```powershell
+mvn -q -DskipTests compile
+```
+
+Run the API server:
+
+```powershell
+mvn -pl agenttrace-server spring-boot:run
+```
+
+Health check:
+
+```text
+GET http://localhost:8080/api/health
+```
