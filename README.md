@@ -41,3 +41,10 @@ Build a trace-based debugging and analysis platform for multi-agent AI applicati
 
 The current development blueprint is maintained in [agent.md](./agent.md).
 
+Additional engineering documents:
+
+- [AGENTS.md](./AGENTS.md): AI agent collaboration rules and technical constraints.
+- [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md): architecture and module boundaries.
+- [docs/DATABASE.md](./docs/DATABASE.md): database model and table responsibilities.
+- [docs/API.md](./docs/API.md): API groups and authentication model.
+- [docs/DEV_PLAN.md](./docs/DEV_PLAN.md): staged implementation plan.
