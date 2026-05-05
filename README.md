@@ -74,3 +74,17 @@ Health check:
 ```text
 GET http://localhost:8080/api/health
 ```
+
+Current backend API groups:
+
+```text
+POST   /api/auth/register
+POST   /api/auth/login
+GET    /api/auth/me
+POST   /api/apps
+GET    /api/apps
+GET    /api/apps/{id}
+PUT    /api/apps/{id}
+POST   /api/apps/{id}/rotate-key
+PATCH  /api/apps/{id}/status
+```
