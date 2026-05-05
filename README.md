@@ -87,4 +87,22 @@ GET    /api/apps/{id}
 PUT    /api/apps/{id}
 POST   /api/apps/{id}/rotate-key
 PATCH  /api/apps/{id}/status
+POST   /api/ingest/traces/start
+POST   /api/ingest/traces/{traceId}/finish
+POST   /api/ingest/spans/start
+POST   /api/ingest/spans/{spanId}/finish
+POST   /api/ingest/model-calls
+POST   /api/ingest/tool-calls
+POST   /api/ingest/errors
+```
+
+SDK ingestion APIs use `appKey` and `apiKey` in the request body. Minimal flow:
+
+```json
+{
+  "appKey": "app_xxx",
+  "apiKey": "atk_xxx",
+  "traceId": "trace-demo-001",
+  "name": "generate-learning-plan"
+}
 ```

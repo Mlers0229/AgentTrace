@@ -35,6 +35,7 @@ public class SecurityConfig {
                                 "/api/health",
                                 "/api/auth/register",
                                 "/api/auth/login",
+                                "/api/ingest/**",
                                 "/v3/api-docs/**",
                                 "/doc.html",
                                 "/webjars/**",
